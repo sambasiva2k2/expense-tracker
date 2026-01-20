@@ -40,6 +40,7 @@ public class SecurityConfig {
         return http.build();
     }
 
+    //Disabled cors during development, need to enable it for production use
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
